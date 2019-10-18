@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Form</title>
+</head>
+<body>  
+    <div class="f-container">
+        <form class="f-form" action="#">
+            <div class="f-name">
+                <label for="name" class="f-text">Name*</label>
+                <input id="name" class="f-frame" type="text" name="username"  placeholder="Full name" required>
+            </div>
+            <div class="f-name">
+                <label for="email" class="f-text">Email*</label>
+                <input id="email" class="f-frame" type="email" name="email"  placeholder="Email address" required>
+            </div>
+            <div class="f-name">
+                <label class="f-text">Number of Passes</label> 
+                <div>
+                    <select name="passes" class="f-frame--passes">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="f-name">
+                <label for="comment" class="f-text">Comments</label> 
+                <textarea id="comment" class="f-frame--textarea" name="comment"></textarea>
+            </div>
+            <button class="button" name="submit">PURCHASE</button>
+        </form>
+    </div>
+</body>
+</html>
